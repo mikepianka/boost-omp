@@ -1,0 +1,115 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+      {
+        "alignment": "left",
+        "segments": [
+          {
+            "background": "#98aac5",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": " {{ .Icon }}",
+            "type": "os"
+          },
+          {
+            "background": "#98aac5",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": "{{ .UserName }} ",
+            "type": "session"
+          },
+          {
+            "background": "transparent",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": "--",
+            "type": "text"
+          },
+          {
+            "background": "#5ac28e",
+            "foreground": "transparent",
+            "style": "powerline",
+            "powerline_symbol": "\ue0b0",
+            "template": " {{ .HEAD }} ",
+            "type": "git"
+          },
+          {
+            "background": "transparent",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": "--",
+            "type": "text"
+          },
+          {
+            "background": "#876de3",
+            "foreground": "transparent",
+            "style": "powerline",
+            "powerline_symbol": "\ue0b0",
+            "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+            "type": "python"
+          },
+          {
+            "background": "transparent",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": "--",
+            "type": "text"
+          },
+          {
+            "background": "#518ae0",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": " \u29d7 {{.FormattedMs }} ",
+            "properties": {
+              "threshold": 0,
+              "style": "austin",
+              "always_enabled": true
+            },
+            "type": "executiontime"
+          },
+          {
+            "background": "transparent",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": "--",
+            "type": "text"
+          },
+          {
+            "background": "#eb5050",
+            "foreground": "transparent",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": " \uf00d {{ .Meaning }} ",
+            "type": "exit"
+          }
+        ],
+        "type": "prompt"
+      },
+      {
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+          {
+            "foreground": "default",
+            "style": "plain",
+            "properties": {
+              "style": "full"
+            },
+            "template": "{{ .Path }} \u276f",
+            "type": "path"
+          }
+        ],
+        "type": "prompt"
+      }
+    ],
+    "final_space": true,
+    "version": 2
+  }
+  
